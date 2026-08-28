@@ -1,10 +1,26 @@
+import { motion } from "framer-motion";
+
 export default function Contact() {
   return (
     <section id="contact" className="py-24 px-6 text-center bg-base">
-      <h2 className="text-3xl font-bold mb-2">Let&apos;s connect</h2>
+      <motion.h2
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="text-3xl font-bold mb-2"
+      >
+        Let&apos;s connect
+      </motion.h2>
       <div className="w-14 h-1 mx-auto mb-10 rounded bg-gradient-to-r from-pink-deep to-lavender-deep" />
 
-      <form className="max-w-md mx-auto flex flex-col gap-4 text-left">
+      <motion.form
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6, delay: 0.1 }}
+        className="max-w-md mx-auto flex flex-col gap-4 text-left"
+      >
         <input
           type="text"
           placeholder="Your name"
@@ -26,7 +42,7 @@ export default function Contact() {
         >
           Send message
         </button>
-      </form>
+      </motion.form>
     </section>
   );
 }

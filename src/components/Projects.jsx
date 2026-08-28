@@ -1,9 +1,12 @@
+import { motion } from "framer-motion";
+
+
 const projects = [
   {
     title: "Diabetes RAG evidence synthesizer",
     desc: "Synthesizes drug-class evidence for Type 2 diabetes treatment from PubMed abstracts.",
     tags: ["RAG", "Groq", "Chroma"],
-    accent: "border-pink-deep",
+    accent: "border-buttery",
     link: "#",
   },
   {
@@ -20,7 +23,23 @@ const projects = [
     accent: "border-skyblue-deep",
     link: "#",
   },
+  {
+    title: "",
+    desc: "LLM-powered automated EDA and stress-classification report over sensor data.",
+    tags: ["LLMs", "WESAD", "EDA"],
+    accent: "border-pink-deep",
+    link: "#",
+  },
 ];
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, delay: i * 0.15 },
+  }),
+};
 
 export default function Projects() {
   return (
@@ -28,15 +47,29 @@ export default function Projects() {
       id="projects"
       className="py-24 px-6 text-center bg-gradient-to-b from-[#e9f5ff] to-[#fff9e6]"
     >
-      <h2 className="text-3xl font-bold mb-2">Projects</h2>
+      <motion.h2
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="text-3xl font-bold mb-2"
+      >
+        Projects
+      </motion.h2>
       <div className="w-14 h-1 mx-auto mb-12 rounded bg-gradient-to-r from-pink-deep to-lavender-deep" />
 
-      <div className="grid gap-6 max-w-4xl mx-auto sm:grid-cols-2 md:grid-cols-3 text-left">
-        {projects.map((p) => (
-          <a
+      <div className="grid gap-6 max-w-4xl mx-auto sm:grid-cols-2 md:grid-cols-2 text-left">
+        {projects.map((p, i) => (
+          <motion.a
             key={p.title}
             href={p.link}
-            className={`block bg-white rounded-xl2 p-6 shadow-soft border-t-4 ${p.accent} hover:-translate-y-1 transition-transform`}
+            custom={i}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={cardVariants}
+            whileHover={{ scale: 1.03, y: -6 }}
+            className={`block bg-white rounded-xl2 p-6 shadow-soft border-t-4 ${p.accent}`}
           >
             <h3 className="font-semibold mb-2">{p.title}</h3>
             <p className="text-sm text-muted mb-4">{p.desc}</p>
@@ -50,7 +83,7 @@ export default function Projects() {
                 </span>
               ))}
             </div>
-          </a>
+          </motion.a>
         ))}
       </div>
     </section>
