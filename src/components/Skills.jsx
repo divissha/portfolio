@@ -25,6 +25,8 @@ const skillGroups = [
       "JavaScript",
       "Node.js",
       "Git",
+      "MySQL",
+      "PostgreSQL",
     ],
   },
   {
@@ -38,6 +40,7 @@ const skillGroups = [
       "Python",
       "R",
       "Figma",
+      "Github",
     ],
   },
 ];
@@ -56,7 +59,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="py-24 px-6 text-center bg-gradient-to-b from-[#f6effe] to-[#e9f5ff]"
+      className="py-24 px-6 text-center"
     >
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
@@ -67,9 +70,9 @@ export default function Skills() {
       >
         Skills
       </motion.h2>
-      <div className="w-14 h-1 mx-auto mb-12 rounded bg-gradient-to-r from-pink-deep to-lavender-deep" />
+      <div className="w-14 h-1 mx-auto mb-12 rounded bg-[#F1F5F9]" />
 
-      <div className="grid gap-6 max-w-3xl mx-auto sm:grid-cols-3">
+      <div className="grid gap-6 max-w-3xl mx-auto sm:grid-cols-1">
         {skillGroups.map((group, i) => (
           <motion.div
             key={group.title}
@@ -78,7 +81,7 @@ export default function Skills() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={cardVariants}
-            className="bg-white rounded-xl2 p-8 shadow-soft border border-[#f1e8fb] text-left"
+            className="bg-[#F1F5F9] rounded-xl2 p-8 shadow-soft border border-[#f1e8fb] text-left"
           >
             <h3 className="text-lg font-semibold text-[#6b4fa0] mb-5 text-center">
               {group.title}

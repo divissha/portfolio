@@ -12,8 +12,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-base/80 backdrop-blur-md border-b border-lavender">
-      <nav className="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
+    <header className="fixed top-4 left-1/2 -translate-x-1/2 w-[92%] max-w-4xl z-50 bg-base/95 backdrop-blur-md border border-lavender rounded-full shadow-soft">
+      <nav className="flex items-center justify-between px-6 py-3">
         <a href="#top" className="font-bold text-lg text-ink">
           Divisha Singh
         </a>
@@ -32,9 +32,9 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a
+        <a 
           href="#contact"
-          className="hidden md:inline-block px-5 py-2 rounded-full text-sm font-semibold text-ink bg-gradient-to-r from-pink to-lavender shadow-soft hover:-translate-y-0.5 transition-transform"
+          className="hidden md:inline-block px-5 py-2 rounded-full text-sm font-semibold text-ink bg-skyblue shadow-soft hover:-translate-y-0.5 transition-transform"
         >
           Say hi
         </a>
@@ -54,10 +54,10 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <ul className="md:hidden flex flex-col items-center gap-4 pb-6 bg-base">
+        <ul className="md:hidden flex flex-col items-center gap-4 pb-5 bg-base rounded-b-2xl">
           {links.map((link) => (
             <li key={link.href}>
-              <a
+              <a             
                 href={link.href}
                 onClick={() => setOpen(false)}
                 className="text-sm font-medium text-ink"

@@ -35,7 +35,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="py-24 px-6 text-center bg-gradient-to-b from-[#fff9e6] to-pink"
+      className="py-24 px-6 text-center"
     >
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
@@ -46,7 +46,7 @@ export default function Experience() {
       >
         Experience
       </motion.h2>
-      <div className="w-14 h-1 mx-auto mb-12 rounded bg-gradient-to-r from-pink-deep to-lavender-deep" />
+      <div className="w-14 h-1 mx-auto mb-12 rounded bg-[#F1F5F9]" />
 
       <div className="max-w-xl mx-auto flex flex-col gap-10 text-left">
         {items.map((item, i) => (
