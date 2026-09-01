@@ -58,12 +58,12 @@ export default function Experience() {
             viewport={{ once: true, amount: 0.3 }}
             variants={itemVariants}
           >
-            <h3 className="font-bold text-center">{item.role}</h3>
-            <p className="text-sm text-center">
+            <h3 className="font-bold text-lg text-center">{item.role}</h3>
+            <p className="text-sm text-lg text-center mb-8">
               {item.org}
               {item.period && ` — ${item.period}`}
             </p>
-            <ul className="mt-3 list-disc list-inside text-sm space-y-1">
+            <ul className="mt-3 mb-5 list-disc list-inside text-sm space-y-1">
               {item.points.map((point) => (
                 <li key={point}>{point}</li>
               ))}
