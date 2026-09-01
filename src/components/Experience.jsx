@@ -12,6 +12,15 @@ const items = [
     ],
   },
   {
+    role: "Summer Intern",
+    org: "IIIT-Allahabad — On campus",
+    period: "July – August, 2026",
+    points: [
+      "Point about a responsibility or contribution.",
+      "Point about a result or skill applied.",
+    ],
+  },
+  {
     role: "Personal projects & learning",
     org: "Ongoing",
     period: "",
