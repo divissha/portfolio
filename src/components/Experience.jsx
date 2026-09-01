@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const items = [
   {
-    role: "Your role / internship title",
-    org: "Company name — Remote",
-    period: "Month – Month Year",
+    role: "Intern",
+    org: "IIIT-Allahabad — On campus",
+    period: "August – December, 2026",
     points: [
       "Point about a responsibility or contribution.",
       "Point about a result or skill applied.",
@@ -58,12 +58,12 @@ export default function Experience() {
             viewport={{ once: true, amount: 0.3 }}
             variants={itemVariants}
           >
-            <h3 className="font-semibold text-center">{item.role}</h3>
-            <p className="text-sm text-muted text-center">
+            <h3 className="font-bold text-center">{item.role}</h3>
+            <p className="text-sm text-center">
               {item.org}
               {item.period && ` — ${item.period}`}
             </p>
-            <ul className="mt-3 list-disc list-inside text-sm text-ink space-y-1">
+            <ul className="mt-3 list-disc list-inside text-sm space-y-1">
               {item.points.map((point) => (
                 <li key={point}>{point}</li>
               ))}
