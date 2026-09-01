@@ -7,28 +7,44 @@ const projects = [
     desc: "Synthesizes drug-class evidence for Type 2 diabetes treatment from PubMed abstracts.",
     tags: ["RAG", "Groq", "Chroma"],
     accent: "border-buttery",
-    link: "#",
+    // link: "#",
   },
   {
     title: "Explainable loan default model",
     desc: "XGBoost default prediction with SHAP, Anchors, and counterfactual explanations.",
     tags: ["XGBoost", "SHAP", "Deepchecks"],
     accent: "border-lavender-deep",
-    link: "#",
+    // link: "#",
+  },
+  {
+    title: "Job Portal",
+    desc: "LLM-powered automated EDA and stress-classification report over sensor data.",
+    tags: ["LLMs", "WESAD", "EDA"],
+    accent: "border-skyblue-deep",
+    // link: "#",
+  },
+  {
+    title: "AI Resume Screener",
+    desc: "LLM-powered automated EDA and stress-classification report over sensor data.",
+    tags: ["LLMs", "WESAD", "EDA"],
+    accent: "border-pink-deep",
+    // link: "#",
   },
   {
     title: "Wearable stress insight generator",
     desc: "LLM-powered automated EDA and stress-classification report over sensor data.",
     tags: ["LLMs", "WESAD", "EDA"],
-    accent: "border-skyblue-deep",
-    link: "#",
+    accent: "border-buttery",
+    // link: "#",
   },
   {
-    title: "",
-    desc: "LLM-powered automated EDA and stress-classification report over sensor data.",
-    tags: ["LLMs", "WESAD", "EDA"],
-    accent: "border-pink-deep",
-    link: "#",
+    title: "More Projects",
+    // icon: Github,
+    desc: "",
+    tags: [],
+    accent: "border-lavender-deep",
+    link: "https://github.com/divissha",
+    // label: "GitHub",
   },
 ];
 
@@ -69,7 +85,7 @@ export default function Projects() {
             viewport={{ once: true, amount: 0.3 }}
             variants={cardVariants}
             whileHover={{ scale: 1.03, y: -6 }}
-            className={`block bg-[#F1F5F9] rounded-xl2 p-6 shadow-soft border-t-4 ${p.accent}`}
+            className={`block bg-[#F1F5F9] rounded-xl2 p-6  border-t-4 ${p.accent}`}
           >
             <h3 className="font-semibold text-[#0F172A] mb-2">{p.title}</h3>
             <p className="text-sm text-[#475569] mb-4">{p.desc}</p>

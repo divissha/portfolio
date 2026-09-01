@@ -9,12 +9,12 @@ const FORM_ENDPOINT = "https://formspree.io/f/mjyvvgqr";
 const socialLinks = [
   {
     label: "Gmail",
-    href: "mailto:youremail@gmail.com",
+    href: "mailto:divishasinghw@gmail.com",
     icon: Mail,
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/in/your-username",
+    href: "https://linkedin.com/in/divisha-singhw",
     icon: Linkedin,
   },
   {

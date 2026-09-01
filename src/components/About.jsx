@@ -3,18 +3,7 @@ import { motion } from "framer-motion";
 const cards = [
   {
     icon: "",
-    title: "Who I am",
-    text: "A final-year B.Tech student, who enjoys turning ideas into practical, intelligent applications. I work across machine learning, AI, and web development, building everything from predictive models to complete web applications.",
-  },
-  {
-    icon: "",
-    title: "What I focus on",
-    text: "RAG pipelines, interpretable models, LLM integration, evidence-backed evaluation, and full-stack development.",
-  },
-  {
-    icon: "",
-    title: "How I work",
-    text: "Curious, methodical, and big on measuring what actually matters.",
+    text: "I'm a final-year B.Tech student, who enjoys turning ideas into practical, intelligent applications. I work across machine learning, AI, and web development, building everything from predictive models to complete web applications. I focus on RAG pipelines, interpretable models, LLM integration, and evidence-backed evaluation. I'm curious, methodical, and big on measuring what actually matters. Beyond the modeling side, I enjoy the full lifecycle of turning these ideas into real, working products - designing the data pipelines, building the backend logic, and crafting the interfaces that put them in front of actual users. ",
   },
 ];
 
@@ -45,7 +34,7 @@ export default function About() {
       </motion.h2>
       <div className="w-14 h-1 mx-auto mb-12 rounded bg-[#F1F5F9] " />
 
-      <div className="grid gap-6 max-w-4xl mx-auto sm:grid-cols-2 md:grid-cols-3 ">
+      <div className="grid gap-6 max-w-3xl mx-auto sm:grid-cols-2 md:grid-cols-1 ">
         {cards.map((card, i) => (
           <motion.div
             key={card.title}
@@ -54,13 +43,10 @@ export default function About() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={cardVariants}
-            className="bg-[#F1F5F9] rounded-xl2 p-8 shadow-soft border border-[#f1e8fb]"
+            className=" rounded-xl p-8 border border-[#f1e8fb]"
           >
             <div className="text-2xl mb-3">{card.icon}</div>
-            <h3 className="text-lg font-semibold text-[#6b4fa0] mb-2">
-              {card.title}
-            </h3>
-            <p className="text-sm text-[#475569]">{card.text}</p>
+            <p className="text-lg text-[#F1F5F9]">{card.text}</p>
           </motion.div>
         ))}
       </div>
