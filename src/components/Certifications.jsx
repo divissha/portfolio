@@ -10,7 +10,6 @@ const certifications = [
       "Gained exposure to AI fundamentals, machine learning concepts, intelligent systems, and robotics applications.",
       "Participated in hands-on learning activities and practical sessions focused on AI-driven solutions.",
     ],
-    link: "#",
   },
 ];
 
