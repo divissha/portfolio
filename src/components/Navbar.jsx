@@ -12,7 +12,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-4 left-1/2 -translate-x-1/2 w-[92%] max-w-4xl z-50 bg-base/95 backdrop-blur-md border border-lavender rounded-full shadow-soft">
+    <header className="fixed top-4 left-1/2 -translate-x-1/2 w-[92%] max-w-4xl z-50 bg-base/95 backdrop-blur-md border border-lavender rounded-full ">
       <nav className="flex items-center justify-between px-6 py-3">
         <a href="#top" className="font-bold text-lg text-ink">
           Divisha Singh
