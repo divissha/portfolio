@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Diabetes RAG evidence synthesizer",
     desc: "Synthesizes drug-class evidence for Type 2 diabetes treatment from PubMed abstracts answering comparison questions across drug classes with citations back to source papers.",
-    tags: ["RAG", "Groq", "Chroma", "FastAPI", "React"],
+    tags: ["RAG", "Groq", "ChromaDB", "FastAPI", "React"],
     accent: "border-buttery",
     // link: "#",
   },
