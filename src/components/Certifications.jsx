@@ -39,7 +39,7 @@ export default function Certifications() {
       </motion.h2>
       <div className="w-14 h-1 mx-auto mb-12 rounded bg-[#F1F5F9]" />
 
-      <div className="grid gap-6 max-w-4xl mx-auto sm:grid-cols-2 md:grid-cols-1 text-left">
+      <div className="grid gap-6 max-w-4xl mx-auto sm:grid-cols-1 md:grid-cols-1 text-left">
         {certifications.map((cert, i) => (
           <motion.a
             key={cert.title + cert.date}

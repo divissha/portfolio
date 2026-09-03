@@ -4,15 +4,15 @@ import { motion } from "framer-motion";
 const projects = [
   {
     title: "Diabetes RAG evidence synthesizer",
-    desc: "Synthesizes drug-class evidence for Type 2 diabetes treatment from PubMed abstracts.",
-    tags: ["RAG", "Groq", "Chroma"],
+    desc: "Synthesizes drug-class evidence for Type 2 diabetes treatment from PubMed abstracts answering comparison questions across drug classes with citations back to source papers.",
+    tags: ["RAG", "Groq", "Chroma", "FastAPI", "React"],
     accent: "border-buttery",
     // link: "#",
   },
   {
     title: "Explainable loan default model",
-    desc: "XGBoost default prediction with SHAP, Anchors, and counterfactual explanations.",
-    tags: ["Python", "XGBoost", "SHAP", "Deepchecks"],
+    desc: "A binary classification project that predicts loan defaults and explains why the model makes each prediction - XGBoost default prediction with SHAP, Anchors, and counterfactual explanations.",
+    tags: [ "XGBoost", "SHAP", "MLflow", "Deepchecks"],
     accent: "border-lavender-deep",
     // link: "#",
   },

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const items = [
   {
     role: "Intern",
-    org: "IIIT-Allahabad  |  On campus  |  August – December, 2026",
+    org: "IIIT-Allahabad  |  On campus  |  August – Present",
     points: [
       "Point about a responsibility or contribution.",
       "Point about a result or skill applied.",
@@ -15,18 +15,18 @@ const items = [
     org: "IIIT-Allahabad  |  On campus  |  July – August, 2026 ",
     points: [
       "Implemented a full Explainable AI layer (SHAP, Anchors, DiCE counterfactuals) to interpret model predictions at global and individual levels, surfacing actionable findings including a threshold effect in income-based risk assessment and an over-reliance on a single repayment-progress heuristic covering 75% of 'safe' predictions",
-      "Skills applied : ML, Explainable AI, Debugging, Data Wrangling",
+      "Skills applied : ML, Explainable AI, Debugging, Data Wrangling.",
     ],
   },
-  {
-    role: "Personal projects & learning",
-    org: "Ongoing",
-    period: "",
-    points: [
-      "Built ML projects spanning RAG, explainability, and LLM benchmarking.",
-      "Practiced end-to-end delivery: data prep, modeling, evaluation, deployment.",
-    ],
-  },
+  // {
+  //   role: "Personal projects & learning",
+  //   org: "Ongoing",
+  //   period: "",
+  //   points: [
+  //     "Built ML projects spanning RAG, explainability, and LLM benchmarking.",
+  //     "Practiced end-to-end delivery: data prep, modeling, evaluation, deployment.",
+  //   ],
+  // },
 ];
 
 const itemVariants = {
@@ -53,7 +53,7 @@ export default function Experience() {
       >
         Experience
       </motion.h2>
-      <div className="w-14 h-1 mx-auto mb-12 rounded bg-[#F1F5F9]" />
+      <div className="w-14 h-1 mx-auto mb-20 rounded bg-[#F1F5F9]" />
 
       <div className="max-w-xl mx-auto flex flex-col gap-10 text-left">
         {items.map((item, i) => (
